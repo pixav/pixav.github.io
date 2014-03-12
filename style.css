@@ -1,2 +1,40 @@
-body{color:#00f;font-family:"helvetica";font-size:16px;}
+body{color:#6BD9EE;font-family:"helvetica";font-size:18px;}
 #logo{height:10px;width:10px;}
+#animado{background:url(logo.png) no-repeat;height:30px;width:45px;overflow: hidden;}
+
+#animado:hover{
+	-webkit-animation-name:logo;
+	-webkit-animation-duration:5s;
+	-webkit-animation-iteration-count:1;
+	position:relative;}
+
+h1:active{
+	 -webkit-animation-name: ah1; 
+     -webkit-animation-duration: 5s; 
+     -webkit-animation-iteration-count: 1; 
+     position:relative; }
+
+
+@-webkit-keyframes logo{
+  from {
+    background-position-y:0;
+  }
+
+  to {
+    background-position-y:-690px;
+
+  }
+
+}
+
+
+@-webkit-keyframes ah1{
+  from {
+    left:0;
+  }
+
+  to {
+    left:100%;
+  }
+
+}
