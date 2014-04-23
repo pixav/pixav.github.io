@@ -1,30 +1,33 @@
 body{color:#6BD9EE;font-family:"helvetica";font-size:18px;}
-#logo{height:10px;width:10px;}
-#animado{background:url(logo.png) no-repeat;height:30px;width:45px;overflow: hidden;}
+#logo{height:30px;width:45px;position:absolute;overflow:hidden;}
+#animado{background:url(logo.png) no-repeat;height:690px;width:45px;}
 
 #animado:hover{
 	-webkit-animation-name:logo;
-	-webkit-animation-duration:5s;
-	-webkit-animation-iteration-count:1;
-	position:relative;}
+	-webkit-animation-duration:4s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-fill-mode: forwards;
+	position:relative;
+}
 
 h1:active{
-	 -webkit-animation-name: ah1; 
-     -webkit-animation-duration: 5s; 
-     -webkit-animation-iteration-count: 1; 
-     position:relative; }
+	-webkit-animation-name:ah1; 
+  -webkit-animation-duration:5s; 
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-fill-mode: forwards;
+  position:relative;
+ }
 
 
 @-webkit-keyframes logo{
-  from {
-    background-position-y:0;
+  0% {
+    -webkit-transform:translateY(0px);
   }
-
-  to {
-    background-position-y:-690px;
-
+  100% {
+    -webkit-transform:translateY(-660px);
   }
-
 }
 
 
